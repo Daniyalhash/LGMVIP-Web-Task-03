@@ -1,0 +1,270 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins',sans-serif;
+}
+:root {
+    --color-beige-100: #FFF0E5;
+    --color-blue-0: #F5FCFF;
+    --color-blue-100: #D3F2FF;
+    --color-blue-300: #66C4FF;
+    --color-blue-400: #3388FF;
+    --color-blue-500: #1557FF;
+    --color-blue-800: #1D2340;
+    --color-navy-100: rgba(16,22,47,0.04);
+    --color-navy-200: rgba(16,22,47,0.12);
+    --color-navy-300: rgba(16,22,47,0.28);
+    --color-navy-400: rgba(16,22,47,0.45);
+    --color-navy-500: rgba(16,22,47,0.63);
+    --color-navy-600: rgba(16,22,47,0.75);
+    --color-navy-700: rgba(16,22,47,0.86);
+    --color-navy-800: #10162F;
+    --color-navy-900: #0A0D1C;
+    --color-green-0: #F5FFE3;
+    --color-green-100: #EAFDC6;
+    --color-green-400: #AEE938;
+    --color-green-700: #008A27;
+    --color-yellow-0: #FFFAE5;
+    --color-yellow-400: #CCA900;
+    --color-yellow-500: #FFD300;
+    --color-pink-0: #FFF5FF;
+    --color-pink-400: #F966FF;}
+body{
+    background-color: var(--color-beige-100);
+}
+h1,h2{
+    text-align: center;
+}
+h1{
+    font-family:  "Apercu","Segoe UI","Roboto","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    color: #0A0D1C;
+    text-shadow: 0px 0px 2px var(--color-blue-800);
+}
+h1{
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.h2{
+    margin: auto;
+    padding: 10px;
+    background-color: #1D2340;
+    width: 60%;
+    box-shadow: 8px 7px  white;
+}
+h2{
+    font-family: "Suisse","Apercu","Segoe UI","Roboto","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+/* body */
+.main-body{
+    display: flex;
+    width: 100%;
+}
+.leftBody{
+width: 40%;
+flex: 1;
+padding: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    font-family: "Suisse","Apercu","Segoe UI","Roboto","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;;
+
+}
+.form div{
+    display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+}
+.form label{
+    font-weight: bold;
+    flex: 2;
+    margin-bottom: 15px;
+    color: var(--color-blue-800);
+
+}
+.form input[type="text"],
+.form input[type="radio"],
+.form input[type="checkbox"] {
+    flex: 4;
+    padding: 5px;
+    border: 2px solid #10162F;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Suisse","Apercu","Segoe UI","Roboto","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;;
+    color: var(--color-blue-800);
+    margin-left: 10px;
+    width: 100px;
+}
+
+.form input[type="text"]:focus{
+    color: white;
+    transition: all ease 0.3s;
+background-color: #10162F;
+box-shadow: 0px 0px 4px 5px #1D2340;
+
+}
+.radio-buttons {
+    display:flex;
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+.radio-buttons label {
+    display: inline-block;
+    margin-right: 15px; /* Adjust the margin as needed */
+}
+.submit,.clear{
+    padding: 7px 23px  ;
+    font-size: 15px;
+    border: none;
+    text-transform:capitalize;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.submit{
+    background-color:#10162F;
+    color: white;
+}
+.clear{
+    background-color:white;
+    color: #10162F;
+
+}
+.submit:hover{
+    background-color: white;
+    color: #10162F;
+    box-shadow: 10px 10px #10162F;
+
+    transition: all 0.3s ease;
+}
+.clear:hover{
+    background-color: #10162F;
+    color:white;
+    box-shadow: 10px 10px white;
+
+}
+.middleBody{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically center the line */
+    flex: 1;}
+.line{
+    background-color:#10162F ;
+width: 6px;
+height: 80%;
+box-shadow: 12px 10px white;
+
+text-align: center;
+}
+.rightBody{
+flex: 2;
+display: block;
+justify-content: center;
+align-items: center;
+padding: 20px;
+}
+
+table {
+color: #10162F;
+    border-collapse: collapse; /* Combine adjacent borders into a single border */
+    background-color: transparent;
+    width: 100%;
+}
+
+th, td {
+    background-color: transparent;
+    font-weight: bolder;
+    width: auto;
+    padding: 8px 12px;
+    text-align: center;
+    border: 2px solid #10162F; /* Border around cells */
+}
+
+th {
+    background-color: white; /* Gray background for table headers */
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+tr:nth-child(even) {
+    background-color: transparent;
+    margin: auto; /* Alternate row background color */
+    
+}
+.img-des-js{
+    width: 80px;
+    height: 80px;
+}
+.inBody{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+h3{
+    letter-spacing: 2px;
+    color: #10162F;
+flex: 1;
+margin-right: 10px;
+    padding: 30px;
+}
+
+  
+  /* Target iPhones with specific device-width */
+  @media only screen and (min-device-width: 375px) and (max-device-width: 414px) {
+    h1 {
+        font-size: 25px;
+        }
+        h2{
+            font-size: 0.5rem;
+        }
+        .main-body{
+            display: block;
+        }
+        .middleBody{
+            display: none;
+        }
+        .clear{
+            margin-right: 10px;
+        }
+  }
+  
+  /* Target Android devices with specific device-width */
+  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    h1 {
+        font-size: 25px;
+        }
+        h2{
+            font-size: 0.5rem;
+        }
+        .main-body{
+            display: block;
+        }
+        .middleBody{
+            display: none;
+        }
+        .clear{
+            margin-right: 10px;
+        }
+
+  }
+  /* delete */
+  .fas:hover{
+    color: #AEE938;
+    cursor: pointer;
+  }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../TASK-03/register.css">
+    <!-- icon -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+<!-- Head -->
+<div class="Head">
+    <h1>Practical Center</h1>
+    <div class="h2">
+        <h2> Student Enrolement Form</h2>
+    </div>
+ 
+</div>
+<!-- body -->
+<div class="main-body">
+    <div class="leftBody">
+        <form class="form" >
+            <div>
+                <label for="Name">Name</label>
+                <input type="text" placeholder="Enter name" name="name" id="name" class="form-input" required autocomplete="off"> 
+            </div>
+            <div>
+                <label for="Email">Email</label>
+                <input type="text" placeholder="Enter Email" name="Email" id="Email" class="form-input" required autocomplete="off"> 
+            </div>
+            <div>
+                <label for="Website">Website</label>
+                <input type="text" placeholder="Enter Website" name="Website" id="Website" class="form-input" required autocomplete="off"> 
+            </div>
+            <div>
+                <label for="image-url">Image URL</label>
+                <input type="text" id="image-url" name="image-url" class="form-input" placeholder="Image URL" required autocomplete="off">
+            </div>
+            <div >
+                <label for="gender" id="gender">Gender</label>
+                <div class="radio-buttons">
+                    <input type="radio" id="Male" name="selected-option" class="form-input" value="Male" ><label for="Male">Male</label>
+                    <input type="radio" id="Women" name="selected-option" class="form-input" value="Women" ><label for="Women">Women</label>
+                </div>
+               
+            </div>
+            <div>
+                <label for="skills" id="skills">SKILLS:</label>
+
+                   <input type="checkbox" id="JAVA" name="selected-options[]" class="form-input" value="JAVA" >
+                   <label for="option1">JAVA</label>
+                   <input type="checkbox" id="HTML" name="selected-options[]" class="form-input" value="HTML" >
+                   <label for="option2">HTML</label>
+                   <input type="checkbox" id="CSS" name="selected-options[]" class="form-input" value="CSS" > 
+                   <label for="option3">CSS</label>
+
+            </div>
+            <div>
+                <button class="submit" id="submit" type="submit">Enroll Student</button>
+                <button class="clear">Clear</button>
+            </div>
+            
+
+        </form>
+    </div>
+    <div class="middleBody">
+        <div class="line"></div>
+    </div>
+    <div class="rightBody">
+        <div class="inBody">
+            <h3>Enrolled Students</h3>
+        </div>
+        
+        <div class="show-form">
+                <table class="table" border="1">
+                    <tr>
+                        <th>Description</th>
+                        <th>Image</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../TASK-03/register.js"></script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Input Example</title>
+</head>
+<body>
+    <h1>Enter Image URL</h1>
+    <form action="#" method="get">
+        <label for="image-url">Image URL:</label>
+        <input type="text" id="image-url" name="image-url">
+        <input type="submit" value="Display Image">
+    </form>
+
+    <h2>Image Preview:</h2>
+    <div id="image-preview">
+        <!-- The image will be displayed here after submission -->
+    </div>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const imageUrl = document.querySelector("#image-url").value;
+            const imagePreview = document.querySelector("#image-preview");
+            imagePreview.innerHTML = `<img src="${imageUrl}" alt="User-provided image">`;
+        });
+    </script>
+</body>
+</html>
